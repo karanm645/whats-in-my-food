@@ -1,5 +1,5 @@
 class FoodsController < ApplicationController
   def index
-    @food = FoodService.all_food
+    @foods = FoodFacade.all_food(params[:q])
   end
 end 
